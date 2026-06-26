@@ -2,6 +2,8 @@
 
 Landing Page responsive desarrollada para **Sabor Paisa**, un restaurante (ficticio) de comida típica colombiana que busca ofrecer a sus clientes una forma rápida y sencilla de consultar el menú, conocer los horarios de atención, ubicar el restaurante y realizar reservas desde cualquier dispositivo.
 
+Este proyecto fue desarrollado como parte de mi portafolio profesional con el objetivo de poner en práctica habilidades en desarrollo web utilizando HTML, CSS y JavaScript Vanilla.
+
 ---
 
 ## 📖 Descripción
@@ -61,8 +63,9 @@ Este proyecto busca solucionar ese problema mediante un sitio web moderno, liger
 ```text
 sabor-paisa/
 │
-├── index.html
+├── LICENSE
 ├── README.md
+├── index.html
 │
 ├── assets/
 │   └── images/
@@ -239,4 +242,4 @@ _Próximamente_
 
 ## 📄 Licencia
 
-Este proyecto fue desarrollado con fines académicos y como parte del portafolio profesional de la autora.
+Este proyecto se distribuye bajo la **Licencia MIT**. Consulta el archivo `LICENSE` para obtener más información.
