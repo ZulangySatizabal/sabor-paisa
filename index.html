@@ -21,7 +21,7 @@
     <header id="header">
         <a href="#hero" id="logo-link">
             <span>SP</span>
-            <span id="logo">Sabor Paisa</span>
+            <span id="logo-nombre">Sabor Paisa</span>
         </a>
         <nav aria-label="Menú Principal">
             <ul>
@@ -38,9 +38,10 @@
 
         <!-- Hero -->
         <section id="hero" aria-label="Inicio">
-            <img src="assets\images\hero-image.png" alt="Mesa con platos típicos de comida paisa colombiana" />
+            <img src="assets/images/hero-image.png" alt="Mesa con platos típicos de comida paisa colombiana" />
             <h1>El auténtico sabor paisa en cada plato.</h1>
-            <p>Disfruta bandejas paisas, carnes a la parrilla y comida tradicional preparada con ingredientes frescos.
+            <p>
+                Disfruta bandejas paisas, carnes a la parrilla y comida tradicional preparada con ingredientes frescos.
             </p>
             <button id="ver-menu-btn">Ver Menú</button>
             <button id="reservar-mesa-btn">Reservar Mesa</button>
@@ -49,16 +50,19 @@
         <!-- Menu de Platos -->
         <section id="menu" aria-label="Menú de comidas">
             <h2>Nuestro Menú</h2>
+            <!-- Cuadrilla de tarjetas de cada plato -->
             <div id="menu-grid">
                 <article class="menu-item">
                     <figure>
-                        <img src="assets\images\menu\plato-bandeja-paisa.jpg"
+                        <img src="assets/images/menu/plato-bandeja-paisa.jpg"
                             alt="Bandeja Paisa completa con todos sus acompañamientos" />
                         <figcaption>Bandeja Paisa completa con todos sus acompañamientos.</figcaption>
                     </figure>
                     <h3>Bandeja Paisa</h3>
-                    <p>El plato más emblemático de Antioquia: frijoles, chicharrón, carne molida, chorizo, huevo frito,
-                        arepa y aguacate.</p>
+                    <p>
+                        El plato más emblemático de Antioquia: frijoles, chicharrón, carne molida, chorizo, huevo frito,
+                        arepa y aguacate.
+                    </p>
                     <footer>
                         <span class="price">$38.000</span>
                     </footer>
@@ -69,27 +73,27 @@
                 <article></article>
                 <article></article>
                 <article></article>
-
             </div>
-
         </section>
 
         <!-- Horarios y Ubicación -->
         <section id="horarios-ubicacion">
             <h2>Horarios & Ubicación</h2>
-            <p>Horario de atención:
+            <p>
+                Horario de atención:<br>
                 Lunes a Sábado:
                 <time datetime="11:00">11:00 AM</time> - <time datetime="21:00">9:00 PM</time>
                 Domingos:
                 <time datetime="11:00">11:00 AM</time> - <time datetime="16:00">4:00 PM</time>
             </p>
-            <p>Ubicación:
+            <p>
+                Ubicación:
+            </p>
             <address>
                 Calle 8 #4-32, Yumbo,<br> Valle del Cauca, Colombia <br>
                 Tel: <a href="tel:+573145550192">+57 314 555 0192</a>
             </address>
-            </p>
-            <!-- Map -->
+            <!-- Mapa -->
             <div>
                 <iframe title="Ubicación Sabor Paisa en Google Maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.0180362923234!2d-76.49322399999998!3d3.583332100000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30aa485ac0986b%3A0xa21cc90dacc9b12e!2sCl.%208%20%234-32%2C%20Br.%20Puerto%20Isaac%2C%20Yumbo%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1782857614087!5m2!1ses-419!2sco"
@@ -100,23 +104,98 @@
 
         <!-- Reservas y Contacto -->
         <section id="reservas-contacto">
-            <h2>Reservas tu mesa</h2>
-            <div>
-                <div>
-                    <p>
-                        Reserva con anticipación y garantiza tu lugar. Atendemos grupos desde 2 hasta 40 personas para
-                        eventos especiales.
-                    </p>
-                    <div>
-                        <span>314 555 0192</span>
-                        <span>hola@saborpaisa.com.co</span>
-                    </div>
-                </div>
-        </section>
+            <h2>Reserva tu mesa</h2>
 
+            <div>
+                <p>
+                    Reserva con anticipación y garantiza tu lugar. Atendemos grupos desde 2 hasta 40 personas para
+                    eventos especiales.
+                </p>
+                <div>
+                    <span>314 555 0192</span>
+                    <span>hola@saborpaisa.com.co</span>
+                </div>
+            </div>
+            <!-- Formulario de reserva -->
+            <form action="#" method="post" aria-label="Formulario de reserva">
+                <fieldset>
+                    <legend>Información de contacto</legend>
+
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Detalles de la reserva</legend>
+
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="personas">Número de personas</label>
+                    <input type="number" id="personas" name="personas" min="1" max="40"
+                        placeholder="de 1 hasta 40 personas." required>
+
+                    <label for="mensaje">Mensaje opcional</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"
+                        placeholder="Ocasión especial, alergias, preferencias..."></textarea>
+                </fieldset>
+                <button type="submit">Confirmar reserva</button>
+            </form>
+
+            <p>
+                <small>Nos pondremos en contacto para confirmar tu reserva.</small>
+            </p>
+        </section>
     </main>
     <!-- Footer -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <!-- Brand -->
+        <section>
+            <span>SP</span>
+            <span id="footer-logo-nombre">Sabor Paisa</span>
+            <p>
+                Tradición antioqueña desde 2008. Cocina auténtica con ingredientes frescos del campo.
+            </p>
+        </section>
+        <!-- Contacto -->
+        <section>
+            <h3>Contacto</h3>
+            <address>
+                Calle 8 #4-32, Yumbo,<br> Valle del Cauca, Colombia <br>
+                Tel: <a href="tel:+573145550192">+57 314 555 0192</a><br>
+                Email: <a href="mailto:hola@saborpaisa.com.co">hola@saborpaisa.com.co</a>
+            </address>
+        </section>
+        <!-- Social -->
+        <section>
+            <h3>Síguenos</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/saborpaisayumbo" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </li>
+                <li><a href="https://www.instagram.com/saborpaisa.yumbo" target="_blank"
+                        rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.twitter.com/saborpaisayumbo" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
+            </ul>
+            <p>
+                @saborpaisa.yumbo
+            </p>
+        </section>
+        <!-- Derechos de autor -->
+        <section>
+            <small>&copy; 2026 Sabor Paisa. Todos los derechos reservados</small>
+            <nav aria-label="Menú Pie de Pagina">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#horarios-ubicacion">Horarios y Ubicación</a></li>
+                    <li><a href="#reservas-contacto">Reservas y Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
 </body>
 
 </html>
