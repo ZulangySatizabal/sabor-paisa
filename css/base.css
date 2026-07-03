@@ -52,7 +52,7 @@ textarea {
 }
 
 /* ============================================
-   TIPOGRAFÍA BASE
+    TIPOGRAFÍA BASE
    ============================================ */
 h1, h2, h3 {
   font-family: var(--font-heading);
