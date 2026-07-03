@@ -9,9 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <!-- Importar archivo de estilos para fuentes -->
-    <link rel="stylesheet" href="/css/fonts.css">
-    <!-- Importar hoja de estilos CSS -->
+    <!-- Importar archivo de estilos-->
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/styles.css">
 
 </head>
@@ -19,18 +19,31 @@
 <body>
     <!-- Header -->
     <header id="header">
-        <a href="#hero" id="logo-link">
-            <span>SP</span>
-            <span id="logo-nombre">Sabor Paisa</span>
-        </a>
-        <nav aria-label="Menú Principal">
-            <ul>
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#horarios-ubicacion">Horarios y Ubicación</a></li>
-                <li><a href="#reservas-contacto">Reservas y Contacto</a></li>
-            </ul>
-        </nav>
+        <div id="header-container">
+            <!-- logo -->
+            <a href="#hero" id="logo-link">
+                <span id="logo-icon">SP</span>
+                <span id="logo-nombre">Sabor Paisa</span>
+            </a>
+            <!-- navegación principal -->
+            <nav aria-label="Menú Principal" id="nav-menu">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#horarios-ubicacion">Horarios y Ubicación</a></li>
+                    <li><a href="#reservas-contacto">Reservas y Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- Botón de menú para dispositivos móviles -->
+            <button id="nav-toggle" 
+                    aria-label="Abrir menú de navegación"
+                    aria-controls="nav-menu"
+                    aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
     </header>
 
     <!-- Main -->

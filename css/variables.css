@@ -1,0 +1,26 @@
+:root {
+    /* Fuentes */
+    --font-heading: "Playfair Display", serif;
+    --font-body: "DM Sans", sans-serif;
+
+    /* Colores de marca */
+    --color-primary: #2d5016;
+    --color-accent: #e8a020;
+    --color-bg: #fdf6e3;
+
+    /* Neutros y texto */
+    --color-foreground: #1a1a0f;
+    --color-muted-foreground: #6b6245;
+    --color-border: rgba(45, 80, 22, 0.15);
+
+    /* Fondos suaves para secciones alternas */
+    --color-secondary-bg: #eef3e8;
+    --color-muted-bg: #ede8d8;
+
+    /* Semántico */
+    --color-error: #8b1a1a;
+    --color-success: #3c6b1e;
+
+    /* Otros  */
+    --radius: 0rem;
+}
