@@ -1,8 +1,20 @@
 # 🍽️ Sabor Paisa
 
-Landing Page responsive desarrollada para **Sabor Paisa**, un restaurante (ficticio) de comida típica colombiana que busca ofrecer a sus clientes una forma rápida y sencilla de consultar el menú, conocer los horarios de atención, ubicar el restaurante y realizar reservas desde cualquier dispositivo.
+![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-orange)
+![Licencia](https://img.shields.io/badge/Licencia-MIT-green)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=black)
+
+Landing Page responsive desarrollada para **Sabor Paisa**, un restaurante (_ficticio_) de comida típica colombiana que busca ofrecer a sus clientes una forma rápida y sencilla de consultar el menú, conocer los horarios de atención, ubicar el restaurante y realizar reservas desde cualquier dispositivo.
 
 Este proyecto fue desarrollado como parte de mi portafolio profesional con el objetivo de poner en práctica habilidades en desarrollo web utilizando HTML, CSS y JavaScript Vanilla.
+
+---
+
+## 📸 Vista previa
+
+![Vista previa](assets/screenshots/desktop/home-desktop.png)
 
 ---
 
@@ -19,29 +31,18 @@ Este proyecto busca solucionar ese problema mediante un sitio web moderno, liger
 
 ---
 
-## 🎯 Objetivos
-
-- Mostrar la identidad del restaurante.
-- Presentar el menú de forma clara.
-- Facilitar el acceso a la información de contacto.
-- Permitir que los clientes puedan realizar reservas.
-- Garantizar una excelente experiencia en dispositivos móviles.
-- Crear un sitio fácil de mantener y actualizar.
-
----
-
 ## ✨ Características
 
-- Diseño responsive.
-- Landing Page de una sola página.
-- Navegación mediante desplazamiento suave.
-- Menú con tarjetas de productos.
-- Sección de horarios y ubicación.
+- Diseño Mobile First.
+- Navegación responsive.
+- Header fijo.
+- Menú hamburguesa para móviles.
+- Hero con llamada a la acción.
+- Tarjetas de platos.
+- Horarios y ubicación.
 - Google Maps embebido.
 - Formulario de reservas.
-- Optimización para dispositivos móviles.
-- Código desarrollado únicamente con tecnologías web nativas.
-
+- Código semántico y accesible.
 ---
 
 ## 🛠️ Tecnologías utilizadas
@@ -49,7 +50,7 @@ Este proyecto busca solucionar ese problema mediante un sitio web moderno, liger
 - HTML5
 - CSS3
 - JavaScript (Vanilla JS)
-- Google Maps Embed
+- Google Maps (Embed API)
 - Google Fonts
 - Font Awesome
 - Git
@@ -68,15 +69,50 @@ sabor-paisa/
 ├── index.html
 │
 ├── assets/
-│   └── images/
-│       └── hero-image.png
+│   ├── images/
+│   │   ├── hero-image.png
+│   │   └── menu/
+│   │       └── plato-bandeja-paisa.jpg
+│   │
+│   ├── screenshots/
+│   │   ├── desktop/
+│   │   │   ├── demo-desktop-v1.gif
+│   │   │   └── home-desktop.png
+│   │   └── mobile/
+│   │       ├── demo-mobile-v1.gif
+│   │       └── home-mobile.png
 │
 ├── css/
-│   └── styles.css
+│   ├── base.css
+│   ├── styles.css
+│   └── variables.css
 │
 └── js/
     └── script.js
 ```
+
+---
+
+## 🏗️ Arquitectura
+
+El proyecto sigue una estructura modular para facilitar el mantenimiento.
+
+### CSS
+
+- **variables.css**
+  - Variables CSS globales.
+  - Paleta de colores.
+  - Tipografías.
+  - Espaciados.
+
+- **base.css**
+  - Reset.
+  - Estilos globales.
+  - Tipografía.
+  - Elementos HTML comunes.
+
+- **styles.css**
+  - Estilos específicos de cada sección del sitio.
 
 ---
 
@@ -155,35 +191,44 @@ El sitio está pensado bajo una estrategia **Mobile First**, garantizando una co
 
 ## 🚧 Estado del proyecto
 
-Actualmente el proyecto se encuentra en la etapa de **estructura y planificación**.
+Actualmente el proyecto se encuentra en **fase de desarrollo del frontend**.
 
-### Progreso
-
-| Etapa | Estado |
-|--------|--------|
-| Planificación | ✅ Completada |
-| Definición de estructura | ✅ Completada |
-| Wireframe | ✅ Completado |
-| Desarrollo HTML | 🚧 En progreso |
-| Diseño CSS | ⏳ Pendiente |
-| Responsive | ⏳ Pendiente |
-| JavaScript | ⏳ Pendiente |
-| Formulario funcional | ⏳ Pendiente |
-| Despliegue | ⏳ Pendiente |
+Se ha completado la estructura HTML, la organización del proyecto y la base de estilos junto con el diseño responsive. En las siguientes etapas se implementarán las interacciones con JavaScript, el funcionamiento del menú hamburguesa y la integración del formulario de reservas.
 
 ---
 
 ## 🛣️ Roadmap
 
-- [x] Planificación del proyecto.
-- [x] Definición de la estructura.
-- [x] Diseño del wireframe.
-- [ ] Maquetación HTML.
-- [ ] Diseño CSS.
-- [ ] Adaptación responsive.
-- [ ] Implementación de JavaScript.
-- [ ] Integración del formulario.
-- [ ] Despliegue en GitHub Pages.
+- [x] Planificación.
+- [x] Wireframe.
+- [x] Organización del proyecto.
+- [x] Maquetación HTML.
+- [x] Definición de variables CSS.
+- [x] Estilos base.
+- [x] Completar estilos del Hero.
+- [x] Diseñar el menú de platos.
+- [x] Adaptar a tablet.
+- [x] Adaptar a escritorio.
+
+### Próximas tareas
+
+- [ ] Optimizar rendimiento (Lighthouse).
+- [ ] SEO básico.
+- [ ] Implementar el menú hamburguesa.
+- [ ] Validar accesibilidad.
+- [ ] Optimizar imágenes.
+- [ ] Publicar en GitHub Pages.
+
+---
+
+## 📐 Buenas prácticas implementadas
+
+- HTML5 semántico.
+- Diseño Mobile First.
+- CSS modular.
+- Variables CSS.
+- Accesibilidad mediante atributos ARIA.
+- Uso de etiquetas semánticas (`header`, `main`, `section`, `article`, `footer`, `nav`, `figure`, `address`, `time`).
 
 ---
 
@@ -223,11 +268,23 @@ El proyecto será publicado mediante **GitHub Pages**.
 
 ### Escritorio
 
-_Próximamente_
+#### 📷 Vista previa
+
+![Página principal](assets/screenshots/desktop/home-desktop.png)
+
+#### 🎬 Demostración
+
+![Demo](assets/screenshots/desktop/demo-desktop-v1.gif)
 
 ### Móvil
 
-_Próximamente_
+#### 📷 Vista previa
+
+![Página principal](assets/screenshots/mobile/home-mobile.png)
+
+#### 🎬 Demostración
+
+![Demo](assets/screenshots/mobile/demo-mobile-v1.gif)
 
 ---
 
@@ -235,8 +292,8 @@ _Próximamente_
 
 **Zulangy Satizabal**
 
-- GitHub: https://github.com/ZulangySatizabal
-- LinkedIn: https://www.linkedin.com/in/zulangy-satizabal/
+- [GitHub](https://github.com/ZulangySatizabal)
+- [LinkedIn](https://www.linkedin.com/in/zulangy-satizabal/)
 
 ---
 
