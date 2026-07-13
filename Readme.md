@@ -129,56 +129,6 @@ La página estará compuesta por las siguientes secciones:
 
 ---
 
-## 📋 Contenido de cada sección
-
-### Header
-
-- Logo
-- Nombre del restaurante
-- Menú de navegación
-
-### Hero
-
-- Imagen principal
-- Eslogan
-- Descripción
-- Botón de llamada a la acción
-
-### Menú
-
-Se mostrarán al menos seis platos típicos, cada uno con:
-
-- Imagen
-- Nombre
-- Descripción
-- Precio
-
-### Horarios y ubicación
-
-Incluye:
-
-- Horarios de atención
-- Dirección
-- Google Maps embebido
-
-### Reservas
-
-Formulario con:
-
-- Nombre
-- Teléfono
-- Fecha
-- Número de personas
-- Mensaje opcional
-
-### Footer
-
-- Información de contacto
-- Dirección
-- Redes sociales
-
----
-
 ## 📱 Diseño Responsive
 
 El sitio está pensado bajo una estrategia **Mobile First**, garantizando una correcta visualización en:
