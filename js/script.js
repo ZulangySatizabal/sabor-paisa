@@ -64,3 +64,44 @@ platos.forEach((plato) => {
         </article>
     `;
 });
+
+// Botones
+
+const menuBtn = document.getElementById("ver-menu-btn");
+const reservarBtn = document.getElementById("reservar-mesa-btn");
+const navToggle = document.getElementById("nav-toggle");
+const navMenu = document.getElementById("nav-menu");
+const header = document.getElementById("header");
+
+/* scroll suave */
+menuBtn.addEventListener("click", () => {
+    document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+});
+
+reservarBtn.addEventListener("click", () => {
+    document.getElementById("reservas-contacto").scrollIntoView({ behavior: "smooth" });
+});
+
+/* Menú hamburguesa */
+
+navToggle.addEventListener("click", () => {
+    const isOpen = navMenu.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", isOpen);
+});
+
+navMenu.addEventListener("click", (e) => { 
+    if (e.target.tagName === "A") {
+        navMenu.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", false);
+    }
+});
+
+/* Header scroll*/
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        header.classList.add("header--scrolled");
+    } else {
+        header.classList.remove("header--scrolled");
+    }
+});
